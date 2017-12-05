@@ -1,1 +1,170 @@
 /* Los estilos de tu proyecto */
+/*Header*/
+.no-margin{
+	margin: 0;
+}
+/*section register*/
+.register{
+	background-image: url(../assets/images/taxi.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 5% 0;
+}
+.line{
+	color: #fff;
+	padding: 10%;
+}
+.register-info{
+	background-color: #fcbf00;
+	color: #fff;
+	margin-top: 30%;
+	margin-bottom: 40%;
+}
+.white-logo{
+	width: 15%;
+}
+.button, .button2{
+	margin-bottom: 8%;
+}
+.button2{
+	margin-top: 8%;
+}
+.title-register, .subtitle-register{
+	margin:0;
+}
+.subtitle-register{
+	margin-bottom:8%; 
+}
+.title-register{
+	padding-top: 10%;
+}
+.white-margin{
+	background-color: #fcbf00;
+	color: #fff;
+}
+/*sction new app*/
+.new-app{
+	background-color: #F7B617;
+}
+.description{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom:  1px solid white;
+	color: #fff;
+	font-size: 17px;
+	text-align: justify;
+}
+.text-description, .text-description2{
+	margin-right: 45%;
+	margin-top: 8%;
+}
+.text-description2{
+	margin-top: 8%;
+}
+.image{
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+.iphone-info{
+	margin-top: 5%;
+}
+/* versión responsive*/
+.description3{
+  border:2px solid #fff;
+  color: #fff;
+  font-size: 17px;
+  margin: 3%;
+  text-align: center;
+}
+/*section drive*/
+.drive{
+	background-image: url(../assets/images/conduce.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+.cars {
+	background-color: rgba(0,0,0,0.5);
+	padding: 5% 0 10% 0;
+}
+.drivers {
+  color: #fff;
+  margin-top: 20%;
+  margin-left: 5%;
+}
+.btn-drive{
+	background-color: #F7B617;
+  color: #fff;
+}
+/*section map*/
+.map{
+  background-color: #F7B617;
+  padding-top: 4%;
+}
+.text-map{
+  color: #fff;
+  margin-left: 10%;
+}
+.color-input{
+  background-color: #F7B617;
+}
+.input-group{
+  padding-bottom: 5%;
+  border-radius: 20%;
+  width: 50%;
+  margin-left: 8%;
+  
+}
+.button-map{
+  background-color: #FFF; 
+  margin: 5% 0 10% 20%;
+}
+.color-input::placeholder { 
+  color: #fff;
+}
+.photo-map{
+  width: 25em;
+  height: 16em;
+  border: 2px solid white;
+  padding:1%;
+  margin-bottom: 10%;
+  margin-left: 2%
+}
+iframe{
+  width: 100%;
+  height:100%;
+} 
+.no-border{
+  border:none;
+}
+/*footer*/
+footer{
+  background-color:#2b2b2b; 
+  color: #fff;
+}
+.iconos{
+  display: inline-block;
+  list-style: none;
+  margin-right: 3%;
+}
+.icons{
+  padding-top: 55%;
+}
+li{
+  list-style: none;
+}
+.iconos2{
+  display: inline-block;
+}
+
+@media (min-width: 200px) and (max-width:768px){
+  .btn-hamburger{
+    float:left;
+  }
+  .logo-first{
+    margin-left: 50%;
+  }
+}
