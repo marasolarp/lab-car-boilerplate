@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 	<header>
@@ -50,7 +49,7 @@
                 <h3 class="title-register"><strong>Disfruta el viaje</strong></h3>
                 <h3 class="subtitle-register"><strong>Eres dueño de tu tiempo</strong></h3>
                 <p><strong>viaja con</strong> <img src="assets/images/logoBlanco.png" alt="" class="white-logo"></p>
-                <button type="button" class="btn btn-default btn "><strong>REGISTRATE</strong></button>
+                <button type="submit" class="btn btn-default btn-register" href="#register-modal" data-toggle="modal"><strong>REGISTRATE</strong></button>
                 <p><span class="line">_______ </span> o bien <span class="line">_______ </span></p>
                 <button type="button" class="btn btn-default button"><strong>conviertete en un conductor</strong></button>
               </div>
@@ -85,18 +84,18 @@
             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm visible-xs">
               <div class="row description3">
                 <div>
-                  <h3 class="text-description4">La nueva app</h3>
+                  <h3 class="text-description4"><strong>La nueva app</strong></h3>
                 </div>
                 <div class="col-lg-6 col-md-6 phone"> 
                   <img class="img-responsive center-block image" src="assets/images/iPhone6Plus.png" alt="">
                 </div>
-                <div class="col-lg-6 col-md-6 iphone-info">
-                    <p class="text-description4">Llega a tu destino aún mas rápido</p>
-                </div> 
               </div>
-            </div>
+            <div class="col-lg-6 col-md-6 iphone-info">
+                  <p class="text-description4"><strong>Llega a tu destino aún mas rápido</strong></p>
+            </div>   
         </div>
-	    </div> 
+      </div>
+	 </div> 
 	</section>
 	<section class="drive">
 		<div class="container-fluid">
@@ -202,8 +201,8 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-3 col col-sm-6 col-xs-6">
-          <img src="assets/images/appstore.png" alt="">
-          <img src="assets/images/enBadgeWebGeneric.png">
+          <img class="img-responsive" src="assets/images/appstore.png" alt="">
+          <img class="img-responsive" src="assets/images/enBadgeWebGeneric.png">
         </div>
       </div>
       <div class="row">
@@ -213,12 +212,14 @@
       </div>
     </div> 
   </footer>
+  <script src="https://use.fontawesome.com/7e3056ac5b.js"></script>
 	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
+<!--modal login-->
   <div class="modal fade " id="singin">
     <div class="modal-dialog ">
       <div class="modal-content color-modal">
@@ -241,10 +242,59 @@
               </div>
               <button type="button" class="btn btn-warning btn-modal">LOGING</button>
               <p class="text-modal">Forgot password?<a href="#"> Click Here</a></p>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!--modal registrate-->
+  <!--MODAL REGISTRO-->
+<div class="modal fade" id="register-modal">
+ <div class="modal-dialog">
+   <div class="modal-content box-grey">
+     <!-- header de la ventana -->
+     <div class="modal-header">
+       <!-- boton para cerrar la ventana -->
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       <button type="submit" class="btn btn-default button-register3">Ya tienes una cuenta?</button>
+       <p class="text-register3">O CREA UNA CUENTA NUEVA</p>
+     </div>
+     <!-- contenido de la ventana -->
+     <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-lg-6">
+              <input class="form-control" id="email" placeholder="Nombre">
+            </div>
+            <div class="col-lg-6">
+              <input class="form-control" id="email" placeholder="Apellido">
+            </div>
+          </div>          
+       </div>
+        <div class="form-group">
+          <input class="form-control" id="pwd" placeholder="Correo electrónico ejemplo@correo.mx">
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="pwd" placeholder="Teléfono">
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="pwd" placeholder="Contraseña">
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="pwd" placeholder="Ciudad">
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="pwd" placeholder="(Opcional) Código de invitación">
+        </div>
+        <button type="submit" class="btn btn-default btn-regis">Como te enteraste de nosotros <span class="glyphicon glyphicon-menu-down"></span></button>
+        <button type="submit" class="btn btn-info btn-register4">ENVIAR</button>
+      </form>
+      </div>      
+     </div>
+   </div>
+ </div>
+</div>
+
+ 
 </html>
