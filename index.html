@@ -33,6 +33,33 @@
 			        <li><a href="#singin" data-toggle="modal">Inicio Sesión</a></li>
 		        </ul>
 	        </div>
+          <!--modal login-->
+          <div class="modal fade " id="singin">
+            <div class="modal-dialog ">
+              <div class="modal-content color-modal">
+                 <!-- header de la ventana -->
+                <div class="modal-header ">
+                   <!-- boton para cerrar la ventana -->
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title"><i class="fa fa-user-circle fa-5x" aria-hidden="true"></i></h3>
+                </div>
+                <!-- contenido de la ventana -->
+                <div class="color-login">
+                  <div class="modal-body">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                      </div>
+                      <div class="input-group">
+                      <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+                      </div>
+                      <button type="button" class="btn btn-warning btn-modal">LOGING</button>
+                      <p class="text-modal">Forgot password?<a href="#"> Click Here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 	      </div>
 	    </div>
 	  </nav>
@@ -49,16 +76,62 @@
               <button type="submit" class="btn btn-default btn-register" href="#register-modal" data-toggle="modal"><strong>REGISTRATE</strong></button>
               <p><span class="line">_______ </span> o bien <span class="line">_______ </span></p>
               <button type="button" class="btn btn-default button"><strong>conviertete en un conductor</strong></button>
-            </div>
-            <div class="col-lg-12 col-md-12 hidden-lg hidden-md">
-              <h2>Comienza a viajar</h2>
-              <h3>con <img src="assets/images/logoBlanco.png" alt="" class="white-logo"></h3>
-              <button type="button" class="btn btn-default button2"><strong>Descarga la app</strong></button>
-            </div>               
-          </div>              
-        </div>
-      </div>          
-    </div>
+              <!--modal registrate-->
+              <div class="modal fade" id="register-modal">
+                <div class="modal-dialog">
+                  <div class="modal-content box-grey">
+                    <!-- header de la ventana -->
+                    <div class="modal-header">
+                     <!-- boton para cerrar la ventana -->
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     <button type="submit" class="btn btn-default button-register3">Ya tienes una cuenta?</button>
+                     <p class="text-register3">O CREA UNA CUENTA NUEVA</p>
+                    </div>
+                    <!-- contenido de la ventana -->
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <input class="form-control" id="email" placeholder="Nombre">
+                            </div>
+                            <div class="col-lg-6">
+                              <input class="form-control" id="email" placeholder="Apellido">
+                            </div>
+                          </div>          
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="pwd" placeholder="Correo electrónico ejemplo@correo.mx">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="pwd" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="pwd" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="pwd" placeholder="Ciudad">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="pwd" placeholder="(Opcional) Código de invitación">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-regis">Como te enteraste de nosotros <span class="glyphicon glyphicon-menu-down"></span></button>
+                        <button type="submit" class="btn btn-info btn-register4">ENVIAR</button>
+                      </form>
+                    </div>      
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 hidden-lg hidden-md">
+                <h2>Comienza a viajar</h2>
+                <h3>con <img src="assets/images/logoBlanco.png" alt="" class="white-logo"></h3>
+                <button type="button" class="btn btn-default button2"><strong>Descarga la app</strong></button>
+              </div>               
+            </div>              
+          </div>
+        </div>          
+      </div>
+    </div>  
   </section>
 	<section class="new-app">
 	  <div class="container-fluid">
@@ -99,7 +172,83 @@
           <div class="drivers">
             <h3 class="title-drive"><strong>Conduce cuando quieras</strong></h3>  
             <p> <strong>LAbCar es una opción flexible para alcanzar tus metas financieras</p>
-            <button class="btn btn-default btn-drive" type="submit">Conviertete en un conductor</button>
+            <button class="btn btn-default btn-drive" type="submit" href="#become-driver" data-toggle="modal">Conviertete en un conductor</button>
+            <div class="modal fade" id="become-driver">
+              <div class="modal-dialog">
+                <div class="modal-content box-grey">
+                  <!-- header de la ventana -->
+                  <div class="modal-header">
+                  <!-- boton para cerrar la ventana -->
+                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <!-- contenido de la ventana -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label>¿Tienes vehículo de 4 puertas?</label>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="SÍ">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>          
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Marca</label>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Elige la marca del vehículo">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>            
+                              </div><!-- /btn-group -->
+                            </div><!-- /input-group --> 
+                          </div><!-- /.col-lg-12 -->
+                        </div><!-- /.row -->
+                        <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a</p>
+                        <p><a href="#">sociosmdv@uber.com</a></p>
+                      </div>
+                      <div class="form-group">
+                        <label>Modelo</label>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="modelo1">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>           
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                       <div class="form-group">
+                        <label>Año</label>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="2017">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Número de la matrícula</label>
+                        <input type="text" class="form-control" placeholder="Número de la matrícula">
+                        <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                      </div>
+                      <button type="submit" class="btn btn-info btn-send">ENVIAR</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 			</div>
@@ -214,76 +363,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
-<!--modal login-->
-  <div class="modal fade " id="singin">
-    <div class="modal-dialog ">
-      <div class="modal-content color-modal">
-         <!-- header de la ventana -->
-        <div class="modal-header ">
-           <!-- boton para cerrar la ventana -->
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="modal-title"><i class="fa fa-user-circle fa-5x" aria-hidden="true"></i></h3>
-        </div>
-        <!-- contenido de la ventana -->
-        <div class="color-login">
-          <div class="modal-body">
-            <div class="input-group">
-              <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
-              </div>
-              <div class="input-group">
-              <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-lock" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
-              </div>
-              <button type="button" class="btn btn-warning btn-modal">LOGING</button>
-              <p class="text-modal">Forgot password?<a href="#"> Click Here</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--modal registrate-->
-  <div class="modal fade" id="register-modal">
-    <div class="modal-dialog">
-      <div class="modal-content box-grey">
-        <!-- header de la ventana -->
-        <div class="modal-header">
-         <!-- boton para cerrar la ventana -->
-         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-         <button type="submit" class="btn btn-default button-register3">Ya tienes una cuenta?</button>
-         <p class="text-register3">O CREA UNA CUENTA NUEVA</p>
-        </div>
-        <!-- contenido de la ventana -->
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <div class="row">
-                <div class="col-lg-6">
-                  <input class="form-control" id="email" placeholder="Nombre">
-                </div>
-                <div class="col-lg-6">
-                  <input class="form-control" id="email" placeholder="Apellido">
-                </div>
-              </div>          
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="pwd" placeholder="Correo electrónico ejemplo@correo.mx">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="pwd" placeholder="Teléfono">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="pwd" placeholder="Contraseña">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="pwd" placeholder="Ciudad">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="pwd" placeholder="(Opcional) Código de invitación">
-            </div>
-            <button type="submit" class="btn btn-default btn-regis">Como te enteraste de nosotros <span class="glyphicon glyphicon-menu-down"></span></button>
-            <button type="submit" class="btn btn-info btn-register4">ENVIAR</button>
-          </form>
-        </div>      
-      </div>
-    </div>
 </html>
